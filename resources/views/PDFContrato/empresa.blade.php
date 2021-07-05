@@ -14,11 +14,12 @@
 <body>
 
     <head>
-        <img src="/img/logo-email.png" style="margin: auto; display:block;">
+        <img src="https://acertestagios.com.br/img/logo-email.png" style="text-align: center;  width: 220px;margin-left: 30%;">
     </head>
 
-    <body style="text-align: left; margin-left:40px;margin-right: 20px;"><br><br><br>
+    <body style="text-align: left; margin-left:40px;margin-right: 20px; font-size:12px"><br><br><br>
         <h3 style="text-align: center;">COMO CONTRATAR ESTAGIÁRIOS</h3>
+        <div style="font-size: 12px;">
         <p><b>PODE CONTRATAR ESTAGIÁRIO:</b><br>
             &nbsp;&nbsp; Pessoa jurídica de direito privado, órgãos da administração pública direta, profissionais<br>
             &nbsp;&nbsp; liberais de nível superior, devidamente registrado nos seus conselhos de classe; Ex: (Advogados;<br>
@@ -95,106 +96,158 @@
         <br>
         </p>
         <div>
-            
+        <div>
+
             <form style="padding: 50px; margin-right: 20px; border: solid 1px silver;">
-            <p style="text-align: center; background: silver;">DADOS DA PARTE CONCEDENTE (Empresa) </p>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nome Fantasia: {{$empresa->nomeFantasiaEMP}}" disabled=true>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Razão social: {{$empresa->razaoSocialEMP}}"disabled=true>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="CNPJ: {{$empresa->cnpjEMP}}"disabled=true>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inscrição estaudal: {{$empresa->inscricaoEMP}}"disabled=true>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="E-mail: {{$empresa->emailEMP}}"disabled=true>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Numero de funcionarios: {{$empresa->numFuncionariosEMP}}"disabled=true>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Telefone: {{$empresa->foneEMP}}"disabled=true>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Celular {{$empresa->celularEMP}}"disabled=true>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Whatsapp: {{$empresa->whatsEMP}}"disabled=true>
-                    </div>
-                </div>
-                <p>Endereço:</p>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Rua: {{$empresa->ruaEMP}}"disabled=true>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="N°: {{$empresa->numEMP}}"disabled=true>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Bairro: {{$empresa->bairroEMP}}"disabled=true>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Cidade: {{$empresa->cidadeEMP}}"disabled=true>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="CEP: {{$empresa->cepEMP}}"disabled=true>
-                    </div>
-                </div>
-                <p style="text-align: center; background: silver; margin-top: 10px; padding: 5px;">Dados do representante legal</p>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nome: {{$empresa->representanteNome}}"disabled=true>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="CPF: {{$empresa->representanteCPF}}"disabled=true>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Cargo: {{$empresa->representanteCargo}}"disabled=true>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="RG: {{$empresa->representanteRG}}"disabled=true>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Formação: {{$empresa->representanteFormacao}}"disabled=true>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Numero de registro: {{$empresa->representanteNumRegistro}}"disabled=true>
-                    </div>
-                </div>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Tempo de Experiencia: {{$empresa->representanteTempExp}}"disabled=true>
-                <p style="text-align: center; background: silver; margin-top: 10px; padding: 5px;">Dados do Administrador do convênio</p>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nome: {{$empresa->convenioNome}}"disabled=true>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="CPF: {{$empresa->convenioCPF}}"disabled=true>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Cargo: {{$empresa->convenioCargo}}"disabled=true>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="RG: {{$empresa->convenioRG}}"disabled=true>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Formação: {{$empresa->convenioFormacao}}"disabled=true>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Numero de registro: {{$empresa->convenioNumRegistro}}"disabled=true>
-                    </div>
-                </div>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Tempo de Experiencia: {{$empresa->convenioTempExp}}"disabled=true>
+                <p style="text-align: center; background: silver;">DADOS DA PARTE CONCEDENTE (Empresa) </p>
+                <table style="border: 1px solid silver; font-size: 12px; width: 580px; margin-top: -20px;">
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr >
+                        <td colspan=2 style="border: 1px solid silver;">
+                            Nome Fantasia: {{$empresa->nomeFantasiaEMP}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 style="border: 1px solid silver;">
+                            Razão social: {{$empresa->razaoSocialEMP}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 style="border: 1px solid silver;">
+                            CNPJ: {{$empresa->cnpjEMP}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 style="border: 1px solid silver;">
+                            Inscrição estaudal: {{$empresa->inscricaoEMP}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 style="border: 1px solid silver;">
+                            E-mail: {{$empresa->emailEMP}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid silver;">
+                            Numero de funcionarios: {{$empresa->numFuncionariosEMP}}
+                        </td>
+                        <td style="border: 1px solid silver;">
+                            Telefone: {{$empresa->foneEMP}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid silver;">
+                            Celular {{$empresa->celularEMP}}
+                        </td>
+                        <td style="border: 1px solid silver;">
+                            Whatsapp: {{$empresa->whatsEMP}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 style="border: 1px solid silver;">
+                            Endereço
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 style="border: 1px solid silver;">
+                            Rua: {{$empresa->ruaEMP}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid silver;">
+                            N°: {{$empresa->numEMP}}
+                        </td>
+                        <td style="border: 1px solid silver;">
+                            Bairro: {{$empresa->bairroEMP}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid silver;">
+                            Cidade: {{$empresa->cidadeEMP}}
+                        </td>
+                        <td style="border: 1px solid silver;">
+                            CEP: {{$empresa->cepEMP}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 style="border: 1px solid silver; background: silver;">
+                            Dados do representante legal
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid silver;">
+                            Nome: {{$empresa->representanteNome}}
+                        </td>
+                        <td style="border: 1px solid silver;">
+                            CPF: {{$empresa->representanteCPF}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid silver;">
+                        Cargo: {{$empresa->representanteCargo}}
+                        </td>
+                        <td style="border: 1px solid silver;">
+                            RG: {{$empresa->representanteRG}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid silver;">
+                            Formação: {{$empresa->representanteFormacao}}
+                        </td>
+                        <td style="border: 1px solid silver;">
+                            Numero de registro: {{$empresa->representanteNumRegistro}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 style="border: 1px solid silver;">
+                            Tempo de Experiencia: {{$empresa->representanteTempExp}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 style="border: 1px solid silver; background: silver;">
+                            Dados do Administrador do convênio
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid silver;">
+                            Nome: {{$empresa->convenioNome}}
+                        </td>
+                        <td style="border: 1px solid silver;">
+                            CPF: {{$empresa->convenioCPF}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid silver;">
+                            Cargo: {{$empresa->convenioCargo}}
+                        </td>
+                        <td style="border: 1px solid silver;">
+                            RG: {{$empresa->convenioRG}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid silver;">
+                            Formação: {{$empresa->convenioFormacao}}
+                        </td>
+                        <td style="border: 1px solid silver;">
+                            Numero de registro: {{$empresa->convenioNumRegistro}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2 style="border: 1px solid silver;">
+                            Tempo de Experiencia: {{$empresa->convenioTempExp}}
+                        </td>
+                    </tr>
+                </table>
+
             </form>
             <div>
-            <p style="text-align: right; margin-right: 20px; margin-top: 20px;"> Cascavel, <?php echo date('j,F')." de ".date('Y');?>
+                <p style="text-align: right; margin-right: 20px; margin-top: 20px;"> Cascavel, <?php echo date('j,F') . " de " . date('Y'); ?>
             </div>
             <div style="margin-left: 20px; margin-top: 70px; border-top: 1px solid silver; width: 300px; text-align: center;">
-            Assinatura</div>
+                Assinatura</div>
         </div>
 
     </body>

@@ -55,6 +55,7 @@ Route::get('/vaga/{id}/edit',[App\Http\Controllers\VagasController::class,'edit'
 Route::post('/vaga/update/{id}',[App\Http\Controllers\VagasController::class,'update']);
 Route::delete('/vaga/delete/{id}',[App\Http\Controllers\VagasController::class,'delete']);
 
+/* Rotas para as View que gerando o conteudo dos pdf*/
 Route::get('contrato/empresas/{id}',[App\Http\Controllers\PDFContratoController::class,'contratoEmpresa']);
 Route::get('contrato/instituicoes/{id}',[App\Http\Controllers\PDFContratoController::class,'contratoInstituicao']);
 Route::get('contrato/estudantes/{id}',[App\Http\Controllers\PDFContratoController::class,'contratoEstudante']);

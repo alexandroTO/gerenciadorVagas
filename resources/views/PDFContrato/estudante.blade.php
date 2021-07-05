@@ -14,13 +14,13 @@
 <body>
 
     <head>
-        <img src="/img/logo-email.png" style="margin: auto; display:block;">
+        <img src="https://acertestagios.com.br/img/logo-email.png" style="text-align: center;  width: 220px;margin-left: 30%;">
     </head>
     @foreach($query as $cont)
 
 
     <body style="text-align: left; margin-left:40px;margin-right: 20px;"><br><br><br>
-        <p>Ao <?php echo date('j'); ?> dia do mês de <?php echo date('F') ?> de <?php echo date('Y'); ?>, na cidade de CASCAVEL-PR, em atendimento ao prescrito no Art. 3º, inciso II da lei nº 11.788/2008, as partes a seguir nomeadas.<br>
+        <p style="font-size: 12px;">Ao <?php echo date('j'); ?> dia do mês de <?php echo date('F') ?> de <?php echo date('Y'); ?>, na cidade de CASCAVEL-PR, em atendimento ao prescrito no Art. 3º, inciso II da lei nº 11.788/2008, as partes a seguir nomeadas.<br>
             {{$cont->nomeINS}}, pessoa jurídica de direito privado, inscrita no CNPJ/MF sob nº {{$cont->cnpjINS}}, mantenedora da {{$cont->nomeINS}}, instituição de educação superior, adiante denominado Instituição de Ensino, representado(a) por: {{$cont->diretorNome}}, Telefone: {{$cont->foneINS}};<br>
             <br>
             ESTUDANTE {{$cont->nomeAlunoEST}}, adiante denominado(a) ESTAGIÁRIO, RG:{{$cont->rgEST}} CPF: {{$cont->cpfEST}}, Data de nascimento: {{$cont->dataNascimentoEST}}, Telefone: {{$cont->foneEST}}, Endereço: {{$cont->ruaEST}}, {{$cont->numEST}}, Cascavel/PR. Matriculado no Curso de {{$cont->curso}}, periodo:{{$cont->periodo}}, turno {{$cont->turno}}.<br>
