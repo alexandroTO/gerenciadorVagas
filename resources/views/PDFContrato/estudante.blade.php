@@ -104,9 +104,14 @@
             E por estarem de pleno acordo, firmam o presente instrumento em quatro vias de igual teor e forma, na presença de duas testemunhas, ao final qualificada.<br>
             <br>
             <br>
-            CASCAVEL, 09 de março de 2018<br>
+            
             Indicação do professor orientador por parte da instituição de ensino (art. 7°, inciso III, Lei n° 11.788/08)<br>
         </p>
+        <div>
+            <p style="text-align: right; margin-right: 20px; margin-top: 20px;"> Cascavel, <?php echo date('j,F') . " de " . date('Y'); ?>
+        </div>
+        <div style="margin-left: 20px; margin-top: 70px; border-top: 1px solid silver; width: 300px; text-align: center;">
+            Assinatura</div>
         @endforeach
     </body>
     <footer>

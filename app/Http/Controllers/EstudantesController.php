@@ -43,5 +43,22 @@ class EstudantesController extends Controller
         return Redirect::to('/estudante');
         
     }
+    
+    public function pesq()
+    {
+        return view('estudante.search-form');
+    }
+    
+    public function search(Request $request)
+    {
+        
+        $sql = Estudante::where('curso','=',$request->curso)
+                        ->orWhere('periodo','=',$request->periodo)
+                        ->orWhere('turno','=',$request->turno)
+                        ->Where('cidadeEST','=',$request->cidade)
+                        ->Where('estadoEST','=',$request->estado)
+                        ->get();
+        return view('estudante.search',compact('sql'));
+    }
 
 }

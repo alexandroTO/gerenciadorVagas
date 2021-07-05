@@ -38,6 +38,8 @@ Route::post('/estudante/add',[App\Http\Controllers\EstudantesController::class,'
 Route::get('/estudante/{id}/edit',[App\Http\Controllers\EstudantesController::class,'edit']);
 Route::post('/estudante/update/{id}',[App\Http\Controllers\EstudantesController::class,'update']);
 Route::delete('/estudante/delete/{id}',[App\Http\Controllers\EstudantesController::class,'delete']);
+Route::get('/estudante/pesq',[App\Http\Controllers\EstudantesController::class,'pesq']);
+Route::post('/estudante/search',[App\Http\Controllers\EstudantesController::class,'search']);
 
 /*Rotas para empresas */
 Route::get('/empresa',[App\Http\Controllers\EmpresasController::class,'index']);

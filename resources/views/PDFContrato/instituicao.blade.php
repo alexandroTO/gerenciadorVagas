@@ -57,8 +57,8 @@
 
             </table>
 
-           <p style="text-align: center; background: silver;">AGENTE DE INTEGRAÇÃO</p>
-           <table style="border: 1px solid silver; font-size: 12px; width: 580px; margin-top: -20px;">
+            <p style="text-align: center; background: silver;">AGENTE DE INTEGRAÇÃO</p>
+            <table style="border: 1px solid silver; font-size: 12px; width: 580px; margin-top: -20px;">
                 <tr>
                     <th></th>
                     <th></th>
@@ -68,7 +68,7 @@
 
                 <tr>
                     <td colspan=4 style="border: 1px solid silver;">
-                    Razão social: F. PRESSI PIFFER - INTEGRADORA DE ESTAGIOS
+                        Razão social: F. PRESSI PIFFER - INTEGRADORA DE ESTAGIOS
                     </td>
                 </tr>
 
@@ -83,7 +83,7 @@
                 </tr>
                 <tr>
                     <td colspan=4 style="border: 1px solid silver;">
-                    Endereço: Rua rio grande do Sul 1286 
+                        Endereço: Rua rio grande do Sul 1286
                     </td>
                 </tr>
                 <tr>
@@ -103,7 +103,7 @@
 
             </table>
 
-                </div>
+            </div>
             </div>
 
 
@@ -162,8 +162,12 @@
             d) O estágio objeto do presente Convênio não cria vínculo empregatício de qualquer natureza entre o estagiário e a Concedente, conforme previsto no parágrafo 1º, do artigo 12 da Lei 11.788/08.<br>
             E, por estarem inteiramente de acordo, com as cláusulas estipuladas, as partes concordam que este Convênio, na totalidade de seus termos, preservados os efeitos de atos jurídicos, em vigor, praticados sob a égide dos mesmos, o assinam em 2 (duas) vias de igual teor e forma, juntamente com as testemunhas.<br>
             <br>
-            Cascavel, 28 de maio de 2021.<br>
-
+            
+        <div>
+            <p style="text-align: right; margin-right: 20px; margin-top: 20px;"> Cascavel, <?php echo date('j,F') . " de " . date('Y'); ?>
+        </div>
+        <div style="margin-left: 20px; margin-top: 70px; border-top: 1px solid silver; width: 300px; text-align: center;">
+            Assinatura</div>
 
         </p>
         @endforeach

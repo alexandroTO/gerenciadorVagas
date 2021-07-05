@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
+    'title' => 'Gerenciador de vagas',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -288,6 +288,12 @@ return [
                     'url'  => 'contrato/estudante',
                 ],
             ],
+        ],
+        [
+            'text'        => 'Buscar candidatos',
+            'url'         => '/estudante/pesq',
+            'icon'        => 'far fa-fw fa-file',
+
         ],
 
     ],
